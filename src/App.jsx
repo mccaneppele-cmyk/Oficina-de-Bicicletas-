@@ -1,3 +1,4 @@
+import Ordem from './components/Ordem'
 import { useState } from 'react'
 import './App.css'
 
@@ -88,6 +89,7 @@ function App() {
         <ul>
           {clienteList.map((ordem) => (
             <li key={ordem.id0rdem}>
+            ordem={Ordem}
               <h3>{ordem.dsCliente}</h3>
               <span>{ordem.ordemFinalizada ? "Ordem de Serviço finalizada" : "Ordem de Serviço em andamento"}</span>
               <p>{ordem.dsServico}</p>
